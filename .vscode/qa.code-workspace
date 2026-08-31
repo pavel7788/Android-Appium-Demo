@@ -1,0 +1,87 @@
+{
+  "folders": [
+    { "path": "..", "name": "root" },
+    { "path": "../qa", "name": "qa" }
+  ],
+  "extensions": {
+    "recommendations": [
+      "VisualStudioExptTeam.vscodeintellicode",
+      "VisualStudioExptTeam.vscodeintellicode-completions",
+      "usernamehw.errorlens",
+      "ms-playwright.playwright",
+      "rvest.vs-code-prettier-eslint",
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "eamodio.gitlens",
+      "vscode-icons-team.vscode-icons",
+      "github.copilot-chat",
+      "ms-azure-devops.azure-pipelines",
+      "nrwl.angular-console",
+      "sonarsource.sonarlint-vscode",
+      "ms-azuretools.vscode-containers",
+      "tomoki1207.pdf",
+      "semanticworkbenchteam.mcp-server-vscode",
+      "cweijan.vscode-office"
+    ]
+  },
+  "settings": {
+    "terminal.integrated.env.windows": {
+      "PATH": "C:\\Program Files (x86)\\GnuWin32\\bin;${env:PATH}"
+    },
+    "workbench.editorAssociations": {
+      "*.md": "default"
+    },
+    "playwright.testExplorer.useLegacyTestAdapter": true,
+    "breadcrumbs.enabled": true,
+    "files.exclude": {
+      "**/.gradle": true,
+      "**/build": true,
+      "**/node_modules": true,
+      "**/.idea": true,
+      "**/.venv": true
+    },
+    "search.useIgnoreFiles": false,
+    "search.exclude": {
+      "**/test-results": true,
+      "**/test-report": true,
+      "**/playwright-report": true,
+      "**/.auth": true,
+      "**/.auth-deployed": true,
+      "**/allure-results": true,
+      "**/allure-report": true,
+      "**/dist": true,
+      "**/log": true
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "trailing",
+    "editor.foldingImportsByDefault": true,
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "files.trimTrailingWhitespace": true,
+    "js/ts.suggest.enabled": true,
+    "js/ts.updateImportsOnFileMove.enabled": "always",
+    "js/ts.inlayHints.variableTypes.enabled": true,
+    "js/ts.inlayHints.variableTypes.suppressWhenTypeMatchesName": true,
+    "js/ts.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+    "js/ts.inlayHints.functionLikeReturnTypes.enabled": true,
+    "js/ts.inlayHints.parameterNames.enabled": "all",
+    "js/ts.inlayHints.parameterTypes.enabled": true,
+    "js/ts.inlayHints.enumMemberValues.enabled": true,
+    "js/ts.inlayHints.propertyDeclarationTypes.enabled": true,
+    "prettier.prettierPath": "node_modules/prettier/index.cjs",
+    "eslint.workingDirectories": [
+      {
+        "mode": "auto"
+      }
+    ],
+    "eslint.useFlatConfig": true,
+    "git.branchProtection": ["develop"],
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.location": "top",
+    "files.eol": "\n",
+  }
+}
