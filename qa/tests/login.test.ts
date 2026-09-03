@@ -4,6 +4,8 @@ import { USERS, ERRORS } from '../data/testData'
 import { Tag } from '../types/Tags'
 import { step } from '../helpers/step'
 
+// iOS: only LOGIN-01 is verified so far. Run with:
+// npm run test:iphone-15:bs -- --spec ./tests/login.test.ts --mochaOpts.grep "LOGIN-01"
 describe('Login', () => {
     beforeEach(async () => {
         await LoginPage.navigateToLogin()

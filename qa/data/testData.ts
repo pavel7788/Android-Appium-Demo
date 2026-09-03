@@ -10,7 +10,7 @@ export const PATTERNS = {
 
 export const USERS = {
     standard: {
-        email: 'bod@example.com',
+        get email(): string { return driver.isIOS ? 'bob@example.com' : 'bod@example.com' },
         password: '10203040',
     },
     locked: {
@@ -19,6 +19,10 @@ export const USERS = {
     },
     visual: {
         email: 'visual@example.com',
+        password: '10203040',
+    },
+    john: {
+        email: 'john@example.com',
         password: '10203040',
     },
 }

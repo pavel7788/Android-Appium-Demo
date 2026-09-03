@@ -1,8 +1,9 @@
 import { BasePage } from './BasePage'
+import { androidId, iosId, platformSelector } from '../helpers/selectors'
 
 class CatalogPage extends BasePage {
-    get productsTitle() { return $(this.id('productTV')) }
-    get productsRV()    { return $(this.id('productRV')) }
+    get productsTitle() { return $(platformSelector({ android: androidId('productTV'), ios: iosId('Product Name') })) }
+    get productsRV()    { return $(platformSelector({ android: androidId('productRV'), ios: iosId('Product Name') })) }
     get sortIcon()      { return $(this.id('sortIV')) }
     get titleTV()   { return this.id('titleTV') }
     get productIV() { return this.id('productIV') }
